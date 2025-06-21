@@ -1,0 +1,432 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+}
+.wrapper {
+  width: 90%;
+  margin: 0 auto;
+  padding: 10px 0;
+}
+.header-top {
+  background-color: #000;
+  color: #fff;
+}
+.header-top p {
+  margin: 0;
+}
+.header-top span {
+  font-weight: bold;
+}
+.header-bottom {
+  background-color: rgba(0, 0, 0, 0.8);
+  text-align: center;
+  display: flex;
+}
+.header-bottom .wrapper img {
+  width: 100%;
+}
+.header-bottom nav {
+  display: none;
+  padding: 10px;
+}
+.header-bottom nav ul {
+  margin: 0 auto;
+}
+.header-bottom nav ul li {
+  display: inline-block;
+  list-style-type: none;
+  padding: 10px;
+}
+.header-bottom nav ul li a {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  border: 1px solid rgb(196, 140, 68);
+  padding: 10px;
+  font-size: 14px;
+}
+.header-bottom nav ul li a:hover,
+.header-bottom nav ul li a:active {
+  color: rgb(196, 140, 68);
+}
+.header-bottom .mobile-menu {
+  text-align: start;
+  padding: 10px;
+}
+.header-bottom .mobile-menu i {
+  color: rgb(196, 140, 68);
+}
+.header-bottom .mobile-menu a i {
+  font-size: 30px;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 10px;
+}
+.hero {
+  background: url(img/hero.jpg) center top / cover no-repeat;
+  padding: 70px;
+  position: relative;
+}
+.hero-text {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-style: italic;
+  position: absolute;
+  top: 25%;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.kuvar {
+  position: relative;
+}
+.kuvar::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(
+    0,
+    0,
+    0,
+    0.3
+  ); /* Boja zatamnjenja (crna sa 50% prozirnosti) */
+}
+.kuvar img {
+  width: 100%;
+}
+.kuvar-text {
+  height: 350px;
+  font-size: 12px;
+  padding: 0 10px;
+  overflow: scroll;
+  color: black;
+}
+.burger {
+  background-color: #c48c44;
+}
+.burger .wrapper {
+  text-align: center;
+}
+.burger img {
+  width: 150px;
+  height: auto;
+}
+.burger-text {
+  font-size: 12px;
+  padding: 10px;
+}
+
+/************** JELOVNIK *******************/
+
+.jelovnik .wrapper {
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+.box {
+  margin: 0 auto;
+  padding: 10px;
+}
+.box img {
+  width: 100%;
+}
+.box h2 {
+  color: rgb(196, 140, 68);
+}
+.box a {
+  text-decoration: none;
+  border: 1px solid rgb(196, 140, 68);
+  padding: 10px;
+  background-color: rgb(196, 140, 68);
+  color: #fff;
+  border-radius: 5%;
+}
+
+/********** Nas jelovnik ******************/
+.main img {
+  width: 100%;
+}
+.main {
+  border-bottom: 1px solid rgb(196, 140, 68);
+}
+.sidebar .box1 {
+  display: none;
+}
+
+/******** FOOTER **********/
+
+.footer-top {
+  background-color: aliceblue;
+  padding: 10px;
+}
+.footer-top .wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-top .wrapper a i {
+  font-size: 20px;
+}
+.footer-top img {
+  width: 30%;
+}
+.footer-bottom {
+  text-align: center;
+  background-color: #000;
+  color: #fff;
+  font-size: 12px;
+  padding: 5px;
+}
+
+/*********** CENOVNIK **************/
+table {
+  width: 100%;
+}
+table td {
+  padding: 0 15px;
+  line-height: 8px;
+  font-size: 14px;
+}
+table th {
+  background-color: rgb(196, 140, 68);
+  color: white;
+  text-align: left;
+  padding: 8px;
+}
+table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+table tr td {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/*********** KONTAKT **************/
+#kontakt-form {
+  padding: 10px;
+}
+#kontakt-form form p {
+  margin: 0;
+}
+input[type="text"],
+textarea {
+  width: 80%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+input[type="submit"] {
+  color: white;
+  background-color: rgb(196, 140, 68);
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  display: block;
+}
+#checkbox {
+  display: block;
+  font-size: 12px;
+  margin-bottom: 15px;
+}
+
+.google-map iframe {
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .wrapper {
+    width: 70%;
+  }
+  .top {
+    background: url(img/hero.jpg) center top / cover no-repeat fixed;
+  }
+  .hero {
+    padding: 250px 0;
+    background: none;
+  }
+  .hero-text {
+    line-height: 10px;
+    padding: 10px;
+    font-size: 16px;
+  }
+  .header-bottom .wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+  .header-bottom nav {
+    display: none;
+    width: 100%;
+  }
+  .header-bottom nav ul li {
+    display: inline-block;
+  }
+  .header-bottom nav ul li a {
+    font-size: 10px;
+  }
+  .mobile-menu {
+    display: block;
+  }
+  .kuvar .wrapper {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    height: 350px;
+  }
+  .kuvar-text {
+    overflow: hidden;
+    color: black;
+  }
+  .burger .wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+  .burger-text {
+    padding: 0 100px;
+    align-self: center;
+  }
+
+  .google-map {
+    width: 80%;
+    margin: 0 auto;
+  }
+  /********** JELOVNIK ****************/
+
+  .jelovnik .wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .box {
+    width: 250px;
+  }
+  /************ NAS JELOVNIK ****************/
+  .nas-jelovnik .wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .nas-jelovnik .main {
+    width: 80%;
+    border-bottom: none;
+  }
+  .sidebar .box1 {
+    display: block;
+  }
+
+  /************** CENOVNIK ***************/
+  .cenovnik .wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+  }
+  .cenovnik-text {
+    width: 30%;
+    padding: 20px;
+  }
+
+  /*************** KONTAKT ******************/
+  #kontakt-form {
+    margin: 0 auto;
+    width: 50%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .wrapper {
+    width: 70%;
+  }
+  .top {
+    background: url(img/hero.jpg) center top / cover no-repeat fixed;
+  }
+  .hero {
+    padding: 250px 0;
+    background: none;
+  }
+  .hero-text {
+    line-height: 10px;
+    padding: 10px;
+    font-size: 16px;
+  }
+  .header-bottom .wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+  .header-bottom nav {
+    display: block;
+    padding: 10px;
+    width: 100%;
+  }
+  .header-bottom nav ul li {
+    display: inline-block;
+  }
+  .mobile-menu {
+    display: none;
+  }
+  .kuvar .wrapper {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .kuvar-text {
+    height: auto;
+    overflow: hidden;
+    color: black;
+  }
+  .burger .wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+  .burger-text {
+    padding: 0 100px;
+    align-self: center;
+  }
+
+  /********** JELOVNIK ****************/
+
+  .jelovnik .wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .box {
+    width: 250px;
+  }
+  /************ NAS JELOVNIK ****************/
+  .nas-jelovnik .wrapper {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .nas-jelovnik .main {
+    width: 50%;
+    border-bottom: none;
+  }
+  .sidebar .box1 {
+    display: block;
+  }
+
+  /************** CENOVNIK ***************/
+  .cenovnik .wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+  }
+  .cenovnik-text {
+    width: 30%;
+    padding: 20px;
+  }
+
+  /*************** KONTAKT ******************/
+  #kontakt-form {
+    width: 50%;
+  }
+}
